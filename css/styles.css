@@ -11499,7 +11499,7 @@ body {
   .perkins-envelope-step.floral-horizontal-preview::before {
     inset: 0;
     background-position: center;
-    background-size: auto 112%;
+    background-size: auto 135%;
     transform: rotate(0deg);
   }
   .perkins-rsvp-step {
