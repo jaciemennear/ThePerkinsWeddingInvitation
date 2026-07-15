@@ -11502,8 +11502,26 @@ body {
   .perkins-envelope-step.floral-horizontal-preview::before {
     inset: 0;
     background-position: center;
-    background-size: auto 135%;
+    background-size: auto 118%;
     transform: rotate(0deg);
+  }
+  .perkins-envelope-step.floral-horizontal-preview .envelope-intro {
+    margin: -1.5rem auto 2rem;
+  }
+  .perkins-envelope-step.floral-horizontal-preview .envelope-intro h1 {
+    width: auto;
+    max-width: 9ch;
+    margin-inline: auto;
+    font-size: clamp(2.5rem, 12vw, 3.4rem);
+    line-height: 1.05;
+    white-space: normal;
+  }
+  .perkins-envelope-step.floral-horizontal-preview .envelope-trigger {
+    width: min(78vw, 19rem);
+    transform: none;
+  }
+  .perkins-envelope-step.floral-horizontal-preview .text-free-envelope {
+    max-width: none;
   }
   .perkins-rsvp-step {
     padding: 1.5rem 1rem;
