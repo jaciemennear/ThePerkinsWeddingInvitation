@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="The Perkins wedding invitation" />
+        <title>The Perkins Wedding</title>
+        <meta property="og:title" content="The Perkins Wedding" />
+        <meta property="og:site_name" content="The Perkins Wedding" />
+        <meta property="og:url" content="http://theperkindswedding.com" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="invitation-site perkins-site">
+        <main>
+            <section class="invite-step is-active perkins-step perkins-envelope-step floral-horizontal-preview" id="mailbox" aria-labelledby="mailbox-title">
+                <div class="envelope-intro">
+                    <p class="mini-heading">A special delivery</p>
+                    <h1 id="mailbox-title">You’re invited</h1>
+                    <p>We are delighted to share this invitation with you.</p>
+                </div>
+                <button class="envelope-trigger" type="button" aria-label="Open The Perkins wedding invitation">
+                    <span class="text-free-envelope" aria-hidden="true">
+                        <span class="envelope-base"></span>
+                        <span class="envelope-side envelope-side-left"></span>
+                        <span class="envelope-side envelope-side-right"></span>
+                        <span class="envelope-flap-top"></span>
+                        <span class="envelope-wax-seal"></span>
+                    </span>
+                    <span class="open-prompt">Click to open</span>
+                </button>
+                <article class="envelope-invitation-card" aria-labelledby="invitation-title">
+                    <img id="invitation-title" class="save-the-date-card" src="assets/img/perkins-save-the-date.png" alt="Payton and Jacie Perkins save the date invitation for August 28th, 2026" />
+                </article>
+                <button class="invite-button envelope-rsvp-button" type="button" data-go-to="perkins-rsvp">Next <span aria-hidden="true">→</span></button>
+            </section>
+
+            <section class="invite-step perkins-step perkins-rsvp-step" id="perkins-rsvp" aria-labelledby="rsvp-title" hidden>
+                <div class="rsvp-shell">
+                    <p class="mini-heading">Kindly reply</p>
+                    <h2 id="rsvp-title">Will you join us?</h2>
+                    <p class="form-intro">Please complete the RSVP so we can save a place for you in our celebration.</p>
+                    <div class="form-frame">
+                        <iframe title="Perkins wedding RSVP form" src="https://docs.google.com/forms/d/e/1FAIpQLSeva9nYUC1dit1i3XOLarIb19mtjOtSnVUnCUG2Y_xbNhYLiA/viewform?embedded=true">Loading…</iframe>
+                    </div>
+                    <button class="invite-button" type="button" data-go-to="registry">Continue <span aria-hidden="true">→</span></button>
+                </div>
+            </section>
+
+            <section class="invite-step perkins-step registry-step" id="registry" aria-labelledby="registry-title" hidden>
+                <div class="thank-you-card">
+                    <div class="tiny-lights" aria-hidden="true">✦&nbsp;&nbsp;✦&nbsp;&nbsp;✦&nbsp;&nbsp;✦&nbsp;&nbsp;✦</div>
+                    <p class="mini-heading">With love</p>
+                    <h2 id="registry-title">Thank you</h2>
+                    <p>Having you celebrate with us means the world. We look forward to seeing you there and making beautiful memories together.</p>
+                    <div class="registry-actions">
+                        <a class="registry-button" href="https://www.amazon.com/ax/claim?arb=574c751a-1eba-42ac-b61a-3f24d650087f" target="_blank" rel="noopener noreferrer">Visit our registry <span aria-hidden="true">→</span></a>
+                        <a class="registry-button" href="https://account.venmo.com/u/Jacie-Mennear" target="_blank" rel="noopener noreferrer">Venmo <span aria-hidden="true">→</span></a>
+                    </div>
+                    <p class="registry-note">Please include a message if you would like us to use your donation for a specific purpose! Thanks!</p>
+                </div>
+                <button class="text-button" type="button" data-go-to="mailbox">Back to the envelope</button>
+            </section>
+        </main>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

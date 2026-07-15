@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  background: #f7f0f3;
+  color: #2f2830;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+  color: #9a6078;
+}
+
+.page-shell {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 18px 32px;
+}
+
+.hero-panel {
+  background: #fff;
+  color: #3f3340;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 2px solid #f0d3df;
+  box-shadow: 8px 8px 0 rgba(231, 169, 194, 0.38);
+}
+
+.hero-layout {
+  display: grid;
+  gap: 22px;
+  align-items: start;
+}
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.home-link,
+.anchor-link {
+  display: inline-block;
+  padding: 9px 14px;
+  border: 2px solid #e7a9c2;
+  background: #fdf1f6;
+  color: #9a6078;
+  text-decoration: none;
+}
+
+.hero-copy h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  line-height: 1;
+  color: #9a6078;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #b07f96;
+}
+
+.hero-text {
+  max-width: 760px;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.story-layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  margin-bottom: 24px;
+}
+
+.info-card,
+.section-panel,
+.hero-photo-card,
+.inline-photo-card,
+.media-card {
+  background: #fff;
+  border: 2px solid #f0d3df;
+}
+
+.info-card {
+  padding: 24px;
+  box-shadow: -6px 6px 0 rgba(231, 169, 194, 0.22);
+}
+
+.section-panel {
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 6px 6px 0 rgba(231, 169, 194, 0.18);
+}
+
+.hero-photo-card {
+  padding: 10px;
+  box-shadow: 6px 6px 0 rgba(231, 169, 194, 0.22);
+}
+
+.hero-photo-card img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: 28% 12%;
+  display: block;
+}
+
+.side-photo-card {
+  align-self: start;
+}
+
+.section-heading h2,
+.info-card h2,
+.checklist-card h3 {
+  margin-top: 0;
+  color: #9a6078;
+}
+
+.section-heading p,
+.info-card p,
+.tableau-placeholder p {
+  line-height: 1.7;
+}
+
+.feature-list {
+  line-height: 1.8;
+}
+
+.favorite-canyons {
+  margin: 0;
+  padding-left: 1.4rem;
+  line-height: 1.8;
+}
+
+.favorite-canyons > li {
+  margin-bottom: 18px;
+  color: #9a6078;
+  font-weight: 700;
+}
+
+.favorite-canyons ul {
+  margin-top: 8px;
+  padding-left: 1.3rem;
+  color: #2f2830;
+  font-weight: 400;
+}
+
+.favorite-canyons ul li + li {
+  margin-top: 6px;
+}
+
+.photo-break {
+  list-style: none;
+  margin-left: -1.2rem;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+.inline-photo-card {
+  margin: 0;
+  padding: 10px;
+  box-shadow: 4px 4px 0 rgba(231, 169, 194, 0.16);
+}
+
+.inline-photo-card img {
+  width: 100%;
+  height: 440px;
+  display: block;
+  object-fit: contain;
+  object-position: center center;
+  background: #f7f0f3;
+}
+
+.photo-zoom-out img {
+  object-fit: contain;
+  object-position: center center;
+}
+
+.photo-focus-up img {
+  object-position: center center;
+}
+
+.video-frame {
+  overflow: hidden;
+  border: 2px solid #f0d3df;
+  background: #000;
+}
+
+.video-frame iframe {
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+.tableau-placeholder {
+  min-height: 240px;
+  border: 2px dashed #d69ab4;
+  background: #fff7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.tableau-wrap {
+  overflow: hidden;
+  line-height: 0;
+}
+
+.tableauPlaceholder {
+  width: 100%;
+  line-height: 0;
+}
+
+.tableauPlaceholder iframe,
+.tableauPlaceholder object {
+  display: block;
+  overflow: hidden;
+}
+
+#viz {
+  margin-bottom: 0;
+}
+
+.back-top-wrap {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.back-top-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 2px solid #e7a9c2;
+  background: #e7a9c2;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-top-btn:hover,
+.back-top-btn:focus {
+  background: #cf88a6;
+  border-color: #cf88a6;
+  color: #fff;
+}
+
+.placeholder-note {
+  color: #9a6078;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .hero-layout,
+  .story-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .video-frame iframe {
+    min-height: 260px;
+  }
+
+}
