@@ -11495,6 +11495,14 @@ body {
   max-width: 32rem;
   margin-inline: auto;
 }
+@media (max-width: 767.98px) {
+  .perkins-envelope-step.floral-horizontal-preview::before {
+    inset: 0;
+    background-position: center;
+    background-size: contain;
+    transform: none;
+  }
+}
 .envelope-intro,
 .envelope-trigger,
 .envelope-invitation-card,
