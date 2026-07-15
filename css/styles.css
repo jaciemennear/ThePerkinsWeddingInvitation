@@ -11926,3 +11926,22 @@ section#contact form#contactForm :-ms-input-placeholder {
   background: rgba(255, 255, 255, 0.84);
   box-shadow: 0 1rem 3rem rgba(79, 72, 77, 0.18);
 }
+
+/* Strong portrait-phone envelope layout override */
+@media (max-width: 767.98px) and (orientation: portrait) {
+  .perkins-envelope-step.floral-horizontal-preview::before {
+    inset: 0 !important;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .perkins-envelope-step.floral-horizontal-preview .envelope-trigger {
+    width: min(56vw, 13rem) !important;
+    margin-top: .5rem !important;
+  }
+  .perkins-envelope-step.floral-horizontal-preview .text-free-envelope {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
