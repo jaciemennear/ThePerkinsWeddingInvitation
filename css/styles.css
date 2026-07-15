@@ -11449,7 +11449,7 @@ body {
   inset: -8% -6% -8% -6%;
   z-index: 0;
   content: "";
-  background-image: url("../assets/img/envelope-floral-frame.jpg");
+  background-image: url("../assets/img/envelope-floral-pattern.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -11472,6 +11472,11 @@ body {
   margin: -3rem auto 3.25rem;
   display: grid;
   place-items: center;
+  padding: 1.35rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: .7rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 .8rem 2rem rgba(92, 105, 95, 0.13);
 }
 .perkins-envelope-step.floral-horizontal-preview .envelope-intro h1 {
   font-size: clamp(3.4rem, 8.2vw, 5.5rem);
@@ -11487,7 +11492,7 @@ body {
   text-align: center;
 }
 .perkins-envelope-step.floral-horizontal-preview .envelope-trigger {
-  width: min(100%, 42rem);
+  width: min(100%, 48rem);
   margin-inline: auto;
   transform: translateY(-0.45rem);
   display: grid;
@@ -11495,7 +11500,7 @@ body {
 }
 .perkins-envelope-step.floral-horizontal-preview .text-free-envelope {
   width: 100%;
-  max-width: 37rem;
+  max-width: 42rem;
   margin-inline: auto;
 }
 @media (max-width: 767.98px) {
@@ -11927,6 +11932,15 @@ section#contact form#contactForm :-ms-input-placeholder {
   box-shadow: 0 1rem 3rem rgba(79, 72, 77, 0.18);
 }
 
+/* Full-bleed floral opening background */
+.perkins-envelope-step.floral-horizontal-preview {
+  background: #faf8f1 url("../assets/img/envelope-floral-pattern.jpg") center / cover no-repeat;
+}
+.perkins-envelope-step.floral-horizontal-preview::before {
+  inset: 0;
+  background-size: cover;
+}
+
 /* Strong portrait-phone envelope layout override */
 @media (max-width: 767.98px) and (orientation: portrait) {
   .perkins-envelope-step.floral-horizontal-preview::before {
@@ -11937,7 +11951,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     transform: none !important;
   }
   .perkins-envelope-step.floral-horizontal-preview .envelope-trigger {
-    width: min(56vw, 13rem) !important;
+    width: min(68vw, 17rem) !important;
     margin-top: .5rem !important;
   }
   .perkins-envelope-step.floral-horizontal-preview .text-free-envelope {
@@ -11949,11 +11963,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 /* Direct phone background fallback: guarantees the floral frame is visible. */
 @media (max-width: 767.98px) {
   .perkins-envelope-step.floral-horizontal-preview {
-    background-color: #ffffff !important;
-    background-image: url("../assets/img/envelope-floral-frame.jpg") !important;
+    background-color: #faf8f1 !important;
+    background-image: url("../assets/img/envelope-floral-pattern.jpg") !important;
     background-repeat: no-repeat !important;
-    background-size: contain !important;
-    background-position: center top !important;
+    background-size: cover !important;
+    background-position: center center !important;
     background-attachment: scroll !important;
   }
   .perkins-envelope-step.floral-horizontal-preview::before {
