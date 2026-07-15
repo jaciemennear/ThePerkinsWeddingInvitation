@@ -11949,7 +11949,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 /* Direct phone background fallback: guarantees the floral frame is visible. */
 @media (max-width: 767.98px) {
   .perkins-envelope-step.floral-horizontal-preview {
-    background: #ffffff url("../assets/img/envelope-floral-frame.jpg") center top / auto 125% no-repeat !important;
+    background: #ffffff url("../assets/img/envelope-floral-frame.jpg") center top / 100% auto no-repeat !important;
   }
   .perkins-envelope-step.floral-horizontal-preview::before {
     display: none !important;
