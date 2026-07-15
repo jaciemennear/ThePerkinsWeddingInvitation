@@ -11449,7 +11449,7 @@ body {
   inset: -8% -6% -8% -6%;
   z-index: 0;
   content: "";
-  background-image: url("../assets/img/watercolor-floral-border.png");
+  background-image: url("../assets/img/envelope-floral-frame.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -11460,22 +11460,25 @@ body {
 }
 /* Optional preview: horizontal floral frame. Remove the class from the section to revert. */
 .perkins-envelope-step.floral-horizontal-preview::before {
-  inset: -12% -10% -12% -10%;
+  inset: 0;
   background-position: center 50%;
-  background-size: auto 126%;
-  transform: rotate(90deg);
+  background-size: 100% auto;
+  transform: none;
   transform-origin: center;
   opacity: 0.95;
 }
 .perkins-envelope-step.floral-horizontal-preview .envelope-intro {
   max-width: 44rem;
-  margin: -0.4rem auto 1.5rem;
+  margin: -3rem auto 3.25rem;
   display: grid;
   place-items: center;
 }
 .perkins-envelope-step.floral-horizontal-preview .envelope-intro h1 {
   font-size: clamp(3.4rem, 8.2vw, 5.5rem);
-  margin-bottom: 1rem;
+  width: max-content;
+  max-width: none;
+  margin: 0 auto .65rem;
+  white-space: nowrap;
   text-align: center;
 }
 .perkins-envelope-step.floral-horizontal-preview .envelope-intro > p:last-child {
@@ -11484,7 +11487,7 @@ body {
   text-align: center;
 }
 .perkins-envelope-step.floral-horizontal-preview .envelope-trigger {
-  width: min(100%, 36rem);
+  width: min(100%, 42rem);
   margin-inline: auto;
   transform: translateY(-0.45rem);
   display: grid;
@@ -11492,7 +11495,7 @@ body {
 }
 .perkins-envelope-step.floral-horizontal-preview .text-free-envelope {
   width: 100%;
-  max-width: 32rem;
+  max-width: 37rem;
   margin-inline: auto;
 }
 @media (max-width: 767.98px) {
