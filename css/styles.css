@@ -11449,7 +11449,7 @@ body {
   inset: -8% -6% -8% -6%;
   z-index: 0;
   content: "";
-  background-image: url("../assets/img/envelope-floral-pattern.jpg");
+  background-image: url("../assets/img/envelope-floral-soft.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -11472,7 +11472,7 @@ body {
   margin: -3rem auto 3.25rem;
   display: grid;
   place-items: center;
-  padding: 1.35rem 2rem;
+  padding: 1.8rem 3rem;
   border: 1px solid rgba(255, 255, 255, 0.82);
   border-radius: .7rem;
   background: rgba(255, 255, 255, 0.92);
@@ -11934,11 +11934,19 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 /* Full-bleed floral opening background */
 .perkins-envelope-step.floral-horizontal-preview {
-  background: #faf8f1 url("../assets/img/envelope-floral-pattern.jpg") center / cover no-repeat;
+  background: #faf8f1 url("../assets/img/envelope-floral-soft.jpg") center / 78% auto repeat;
 }
 .perkins-envelope-step.floral-horizontal-preview::before {
   inset: 0;
   background-size: cover;
+}
+.perkins-envelope-step.floral-horizontal-preview::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  content: "";
+  background: rgba(255, 255, 255, 0.48);
+  pointer-events: none;
 }
 
 /* Strong portrait-phone envelope layout override */
@@ -11964,9 +11972,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 @media (max-width: 767.98px) {
   .perkins-envelope-step.floral-horizontal-preview {
     background-color: #faf8f1 !important;
-    background-image: url("../assets/img/envelope-floral-pattern.jpg") !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-image: url("../assets/img/envelope-floral-soft.jpg") !important;
+    background-repeat: repeat !important;
+    background-size: 78% auto !important;
     background-position: center center !important;
     background-attachment: scroll !important;
   }
@@ -11978,5 +11986,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   .perkins-envelope-step.floral-horizontal-preview .envelope-intro > p:last-child {
     max-width: 24ch;
+  }
+}
+
+@media (min-width: 768px) {
+  .perkins-envelope-step.floral-horizontal-preview .envelope-intro {
+    max-width: 52rem;
+    padding: 2.5rem 4.5rem;
   }
 }
