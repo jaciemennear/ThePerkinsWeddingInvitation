@@ -11499,8 +11499,22 @@ body {
   .perkins-envelope-step.floral-horizontal-preview::before {
     inset: 0;
     background-position: center;
-    background-size: contain;
-    transform: none;
+    background-size: auto 112%;
+    transform: rotate(0deg);
+  }
+  .perkins-rsvp-step {
+    padding: 1.5rem 1rem;
+  }
+  .perkins-rsvp-step .rsvp-shell {
+    width: min(100%, 26rem);
+    padding: 1.35rem;
+  }
+  .perkins-rsvp-step .form-frame {
+    margin: 1.25rem 0 .75rem;
+    border-width: .4rem;
+  }
+  .perkins-rsvp-step .form-frame iframe {
+    min-height: 25rem;
   }
 }
 .envelope-intro,
